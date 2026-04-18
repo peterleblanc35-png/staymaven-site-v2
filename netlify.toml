@@ -1,0 +1,55 @@
+# Netlify configuration for Stay Maven
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/triangle"
+  to = "/markets/durham.html"
+  status = 301
+
+[[redirects]]
+  from = "/raleigh-durham"
+  to = "/markets/raleigh.html"
+  status = 301
+
+[[redirects]]
+  from = "/southeast-florida"
+  to = "/markets/south-florida.html"
+  status = 301
+
+[[redirects]]
+  from = "/fort-lauderdale"
+  to = "/markets/south-florida.html"
+  status = 301
+
+[[redirects]]
+  from = "/boca-raton"
+  to = "/markets/south-florida.html"
+  status = 301
+
+[[redirects]]
+  from = "/west-palm-beach"
+  to = "/markets/south-florida.html"
+  status = 301
+
+[[redirects]]
+  from = "/chapel-hill"
+  to = "/markets/durham.html"
+  status = 301
+
+[[redirects]]
+  from = "/maven-assist"
+  to = "/services.html#maven-assist"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
